@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>جدول</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+    <link type="text/css" rel="stylesheet" href="css/jadval.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jadval.js"></script>
+</head>
+
+<body>
+    <div class="lightbox">
+        <div class="container">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 lightbox-inner centered">
+                <div class="row mg-t-10">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" id="tableTit" class="form-control" placeholder="عنوان جدول">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mg-t-10">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" id="row" class="form-control" placeholder="تعداد سطر">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" id="col" class="form-control" placeholder="تعداد ستون">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mg-t-10">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <button class="btn btn-info" id="saveTable">ساخت جدول</button>
+                    </div>
+                </div>
+                <div class="closer">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3 admin-box">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="list-inline centered">
+                        <li>
+                            <button class="btn" id="addTable"><i class="fa fa-plus"></i></button>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <select class="form-control" id="getTable"></select>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" id="saveAllTable"><i class="fa fa-save"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group mg-t-10">
+                        <select class="form-control" id="getUser"></select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="text" id="questionList" class="form-control" placeholder="سوال را وارد کنید">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="jadval"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mg-30" id="question_of"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mg-30" id="question_am"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="res"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
